@@ -1,0 +1,41 @@
+@import 'base/variables';
+
+	
+.brand__logo {
+	color: $black;
+	font-family: $logoFont;
+	font-weight: 600;
+}
+
+.brand__name {
+	color: $black;
+	font-weight: 600;
+}
+
+.main__nav {
+	display: flex;
+}
+
+.nav__list {
+	margin: 0;
+	padding: 10px 0;
+	margin-left: auto;
+	order: 2;
+	list-style: none;
+	.nav__item {
+		float: left;
+		margin-right: 20px;
+		a {
+			color: $lightGrey;
+			text-decoration: none;
+
+			&:hover {
+				color: $dark;
+			}
+		}
+	}
+}
+
+.is__active {
+	color: $dark;
+}

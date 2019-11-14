@@ -1,0 +1,26 @@
+.main__hero {
+	display: flex;
+	text-align: center;
+	min-height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+	.brand__logo {
+		margin: 0;
+		font-size: 100px;
+		line-height: 4rem;
+	}
+
+	.the__title {
+		color: #000;
+		margin: 0;
+		font-size: 40px;
+		padding: 10px 0;
+		text-transform: lowercase;
+	}
+	.the__desc {
+		color: #000;
+		font-weight: 500;
+		letter-spacing: 3.28px;
+		text-transform: uppercase;
+	}
+}
