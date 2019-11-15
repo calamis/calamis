@@ -26,14 +26,18 @@
 		float: left;
 		margin-right: 20px;
 		a {
-			color: $lightGrey;
+			color: $dark;
 			text-decoration: none;
 
 			&:hover {
 				color: $dark;
 			}
 		}
+		&:last-of-type {
+			margin-right: 0;
+		}
 	}
+
 }
 
 .is__active {

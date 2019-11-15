@@ -8,6 +8,14 @@ import '../sass/app.scss'
 const Layout = (props) => {
 	return (
 		<div className="main__layout">
+			<div className="main__pattern">
+				<div className="grd"></div>
+				<div className="grd"></div>
+				<div className="grd"></div>
+				<div className="grd"></div>
+				<div className="grd"></div>
+				<div className="grd"></div>
+			</div>
 			<div className="main__header">
 				<Header />
 			</div>
