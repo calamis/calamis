@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
-
-import style from '../sass/app.scss'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const Header = () => {
 
@@ -25,7 +23,7 @@ const Header = () => {
 			<div className="main__nav">
 				<h2 className="the__title">{data.site.siteMetadata.company}.</h2>
 				<ul className="nav__list">
-					<li className="nav__item"><a href="mailto:xtianalamis@gmail.com" target="_blank">Contact</a></li>
+					<li className="nav__item"><a href="mailto:xtianalamis@gmail.com" rel="noopener noreferrer" target="_blank">Contact</a></li>
 				</ul>
 			</div>
 			<div className="main__hero">
