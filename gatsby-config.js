@@ -9,11 +9,11 @@ module.exports = {
     company: `Xalamis`,
     author: `Christian Alamis`,
     siteUrl: `https://www.xalamis.co`,
-    heroDesc: `A Digital Product design & development studio`,
-    description: `We are a product design and development company`,
+    heroDesc: `A Brand Strategy Design and Web Development Studio`,
+    description: `We Help Brands & Businesses succeed in digital world.`,
   },
   plugins: [
-  `gatsby-plugin-sass`
+  `gatsby-plugin-sass`, `gatsby-plugin-react-helmet`
   ],
   pathPrefix: "/calamis"
 }

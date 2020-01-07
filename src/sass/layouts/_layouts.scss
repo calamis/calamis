@@ -39,5 +39,11 @@
 		border-right: 1px solid rgba(0,0,0,.06);
 		opacity: 1;
 		pointer-events: none;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    transform-origin: top left;
+    animation-name: lineanim;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 	}
 }

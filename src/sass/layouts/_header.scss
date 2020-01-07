@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
 	.brand__logo {
-		margin: 0;
+		margin: 20px 0;
 		font-size: 100px;
 		line-height: 4rem;
 	}
@@ -17,9 +17,19 @@
 		padding: 10px 0;
 		text-transform: lowercase;
 	}
+
+	.the__subTitle {
+		color: #000;
+		font-weight: 600;
+		letter-spacing: 3.28px;
+		text-transform: uppercase;
+	}
+
+
 	.the__desc {
 		color: #000;
 		font-weight: 500;
+		font-size: 16px;
 		letter-spacing: 3.28px;
 		text-transform: uppercase;
 	}

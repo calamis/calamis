@@ -23,16 +23,15 @@ const Header = () => {
 	return (
 		<div className="main__header">
 			<div className="main__nav">
-				<h1 className="brand__logo">{data.site.siteMetadata.logo}</h1>
+				<h2 className="the__title">{data.site.siteMetadata.company}.</h2>
 				<ul className="nav__list">
-					<li className="nav__item"><a href="https://github.com/calamis" target="_blank">Github</a></li>
-					<li className="nav__item"><a href="https://twitter.com/cnalamis" target="_blank">Twitter</a></li>
+					<li className="nav__item"><a href="mailto:xtianalamis@gmail.com" target="_blank">Contact</a></li>
 				</ul>
 			</div>
 			<div className="main__hero">
 				<h1 className="brand__logo">{data.site.siteMetadata.logo}</h1>
-				<h2 className="the__title">{data.site.siteMetadata.company}.</h2>
-				<p className="the__desc">{data.site.siteMetadata.heroDesc}</p>
+				<p className="the__subTitle">{data.site.siteMetadata.heroDesc}</p>
+				<p className="the__desc">{data.site.siteMetadata.description}</p>
 			</div>
 		</div>
 	) 
