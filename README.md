@@ -1,6 +1,5 @@
 
 <h1 align="center">
-  Hello
+  Hello There!
 </h1>
 
-![GitHub Logo](/images/logo.png)
