@@ -1,0 +1,98 @@
+$containerWidth: 160px;
+$marqueeWidth: 637px;
+$marqueePadding: 35px;
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+.services__list {
+	height: $is_500;
+	width: $is__100;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+	margin: 50px auto;
+
+	.services__wrapper {
+		height: $is__100;
+		width: 200%;
+		display: block;
+		position: absolute;
+		animation: marquee 20s linear infinite;
+
+		&:hover {
+			animation-play-state: paused;
+		}
+
+		span {
+		  float: left;
+			line-height: normal;
+			
+		  .the__link {
+				height: auto;
+				width: $is__100;
+				flex: 0 50%;
+				font-family: $titleFont;
+				font-weight: 900;
+				text-decoration: none;
+				text-transform: uppercase;
+				transition: color ease .8s;
+				color: $primary;
+				-webkit-text-stroke-width: 2px;
+				-webkit-text-fill-color: transparent;
+    		-webkit-text-stroke-color: $primary;
+
+    		&:nth-child(even) {
+    			color: $primary;
+    			-webkit-text-fill-color: $primary;
+
+    			&:hover {
+	    			-webkit-text-stroke-width: 2px;
+						-webkit-text-fill-color: transparent;
+    				-webkit-text-stroke-color: $primary;
+    			}
+    		}
+
+    		&:hover {
+    			color: $primary;
+    			-webkit-text-fill-color: $primary;
+    		}
+
+    		@include phone { 
+					font-size: $is_35;
+				}
+				
+				@include tabletPortraitUp {
+					font-size: $is_70;
+				}
+
+				@include tabletLandscapeUp {
+					font-size: $is_130;
+				}
+
+				@mixin desktopUp {
+					font-size: $is_130;
+				}
+
+				@mixin bigDesktopup {
+					font-size: $is_150;
+				}
+			}
+		}
+	}
+
+	@include phone { 
+		height: $is_200;
+		overflow: hidden;
+	}
+	
+	@include tabletPortraitUp {
+		height: $is_600;
+	}
+
+	@include tabletLandscapeUp {
+		height: $is_600;
+	}
+}

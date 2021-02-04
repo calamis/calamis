@@ -1,0 +1,185 @@
+.main__about {
+	position: relative;
+
+  .main__container {
+		display: block;
+
+		.page__header {
+			@include phone {
+				height: $is_500;
+			}
+		}
+			
+  }
+
+	.main__hero {
+		.the__headline {
+			text-align: center;
+			width: auto;
+    	max-width: 100%;
+		}
+	}
+
+	.main__wrapper {
+
+		.the__column {
+			height: auto;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			max-width: $is_1000;
+
+			.the__headline {
+				color: $primary;
+
+				@include phone {
+					font-weight: 500;
+					font-size: $is_25;
+					line-height: 2rem;
+				}
+			}
+
+			.the__caption {
+				color: $primary;
+				font-weight: 500;
+				line-height: 2.5rem;
+				
+				@include phone {
+					font-weight: 500;
+					font-size: $is_18;
+					line-height: 1.5rem;
+				}
+				
+				@include tabletPortraitUp {
+					font-size: $is_25;
+				}
+
+				@include tabletLandscapeUp {
+					font-size: $is_25;
+				}
+
+				@include desktopUp {
+					font-size: $is_25;
+				}		
+			}
+
+			.img__svg {
+				height: $is_300;
+				width: $is__100;
+				margin-top: -$is_100;
+				text-align: center;
+
+				@include phone {
+					height: $is_100;
+					margin-top: $is_10;
+					text-align: right;
+				}
+
+				@include tabletPortraitUp {
+					width: $is__100;
+					height: $is_300;
+					margin-top: $is_10;
+					text-align: right;
+				}
+
+				@include tabletLandscapeUp {
+					width: $is__100;
+					height: $is_300;
+					margin-top: $is_10;
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+
+.main__capabilities {
+	width: $is__100;
+
+	.main__wrapper {
+		margin-top: $is_50;
+
+		.the__column {
+			display: flex;
+			width: 100%;			
+			flex-direction: column;
+			justify-content: center;
+			text-align: left;
+
+			.the__headline {
+				text-transform: uppercase;
+				font-family: inherit;
+				font-weight: 800;
+				font-size: $is_40;
+				margin: $is_15 0;
+
+					@include phone {
+						font-size: $is_25;
+						padding: 0 0 $is_10 0;
+					}
+			}
+
+			@include phone {
+				align-items: flex-start;
+				padding: 0 0 50px 0;
+			}
+
+			@include tabletPortraitUp {
+				align-items: flex-start;
+				padding: 0 0 50px 0;	
+			}
+
+			@include tabletLandscapeUp {
+				align-items: flex-start;
+				padding: 0 0 50px 0;
+			}
+
+			@include desktopUp {
+				// align-items: center;
+			}
+		}
+
+		@include phone {
+			display: block;
+		}
+
+		@include tabletPortraitUp {
+			display: flex;
+		}
+
+		@include tabletLandscapeUp {
+			display: flex;
+		}
+
+		@include desktopUp {
+			display: flex;
+		}
+	}
+
+	.__listItem {
+    position: relative;
+    margin-top: $is_30;
+    
+		.list__item {
+			display: flex;
+
+			.icon__arrow {
+				height: 29px;
+        width: $is_20;
+        margin-bottom: $is_zero;
+			}
+
+			.the__caption {
+				font-size: $is_16;
+				font-weight: 700;
+				padding: $is_zero;
+				text-transform: uppercase;
+				letter-spacing: 2.5px;
+				margin-left: 20px;
+			}
+		}
+	}
+	@include phone {
+		margin-top: $is_25;
+	}
+}

@@ -1,0 +1,68 @@
+.main__cta {
+	width: $is__100;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	.the__column {
+		width: $is__100;
+	}
+
+	.the__body1 {
+		font-size: $is_20;
+		
+		@include phone { 
+			font-size: $is_16;
+			line-height: normal;
+		}
+	}
+
+	.the__headline {
+    padding: $is_20 0;
+    line-height: normal;		
+		font-weight: 900;
+		text-transform: uppercase;
+
+		@include phone { 
+			font-size: $is_30;
+		}
+		
+		@include tabletPortraitUp {
+			font-size: $is_60;
+		}
+
+		@include tabletLandscapeUp {
+			font-size: $is_80;
+		}
+
+		@mixin desktopUp {
+			font-size: $is_80;
+		}
+
+		@mixin bigDesktopup {
+			font-size: $is_80;
+		}
+
+	}
+
+	@include phone { 
+		height: $is_300;
+	}
+	
+	@include tabletPortraitUp {
+		height: $is_500;
+	}
+
+	@include tabletLandscapeUp {
+		height: $is_500;
+	}
+
+	@mixin desktopUp {
+		height: $is_500;
+	}
+
+	@mixin bigDesktopup {
+		height: $is_500;
+	}
+
+}

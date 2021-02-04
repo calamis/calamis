@@ -1,52 +1,215 @@
 @import 'base/variables';
-
-	
 .brand__logo {
-	color: $black;
-	font-family: $logoFont;
+	color: $primary;
 	font-weight: 600;
 }
 
 .brand__name {
-	color: $black;
+	color: $primary;
 	font-weight: 600;
 }
 
 .main__nav {
 	display: flex;
 	.the__title {
-		color: $black;
+		color: $primary;
 		margin: 0;
 		font-size: 25px;
-		padding: 10px 0;
 		text-transform: lowercase;
+		display: flex;
+		align-items: center;
+	}
+	
+	@include tabletLandscapeUp {
+		padding: $is_20 0;
+	}
+
+	@include desktopUp {
+		padding: $is_20 0;
+	}
+
+	@include bigDesktopup {
+		padding: $is_20 0;
 	}
 }
 
 .nav__list {
 	margin: 0;
-	padding: 10px 0;
 	margin-left: auto;
 	order: 2;
 	list-style: none;
+	display: flex;
+	align-items: center;
 	.nav__item {
-		float: left;
-		margin-right: 20px;
+		display: flex;
+    justify-content: space-between;
+		padding: 0 20px;
+		margin: 0;
 		a {
-			color: $dark;
+			color: #262626;
 			text-decoration: none;
+			font-size: $caption;
+			font-weight: 700;
+			font-family: "Inter",sans-serif;
+			letter-spacing: 2.5px;
+			text-transform: uppercase;
+			position: relative;
+			display: inline-block;
 
-			&:hover {
-				color: $dark;
+			&:hover .reveal__item:before {
+				width: 100%;
+				left: 0;
 			}
+
+			.reveal__item	{
+				position: relative;
+				z-index: 1;
+
+				&:before {
+					content: "";
+					position: absolute;
+					top: 12px;
+					width: 0;
+					right: 0;
+					bottom: 0;
+					left: auto;
+					height: 2px;
+					background: $primary;
+					z-index: -1;
+					-webkit-transition: all .3s cubic-bezier(.615,.19,.305,.91);
+					transition: all .3s cubic-bezier(.615,.19,.305,.91);
+				}
+			}
+
+			@include phone {
+				font-size: $body2;
+				margin: $is_10 0;
+			}
+
+			@include tabletPortraitUp {
+				font-size: $body2;
+				margin: $is_10 0;
+			}
+
+			@include tabletPortraitUp {
+				font-size: $caption;
+				margin: $is_10 0;
+			}
+
+			@media (max-width: 768px) {
+				font-size: $body2;
+				margin: $is_10 0;
+			}
+
+			@include desktopUp {
+				font-size: $caption;
+			}
+
+			@include bigDesktopup {
+				font-size: $caption;
+			}
+
 		}
+
 		&:last-of-type {
 			margin-right: 0;
 		}
 	}
 
+	.__contact a {
+		color: #fff;
+    display: inline-block;
+    font-weight: 800;
+    width: 100%;
+    border-radius: 5px;
+		background-color: #262626;
+		letter-spacing: 0;
+		&:hover {
+			color: $primary;
+		}
+		
+		&:hover .reveal__item:before {
+			width: 100%;
+			left: 0;
+			color: $primary;
+		}
+
+		.reveal__item	{
+			position: relative;
+			z-index: 1;
+			padding: 8px 30px;
+			border: solid 1px $primary;
+			border-radius: 5px;
+
+			&:before {
+				color: $primary;
+				content: "";
+				position: absolute;
+				top: 0;
+				width: 0;
+				right: 0;
+				bottom: 0;
+				left: auto;
+				height: auto;
+				background: $white;
+				border: solid 1px $primary;
+				border-radius: 5px;
+				z-index: -1;
+				-webkit-transition: all .3s cubic-bezier(.615,.19,.305,.91);
+				transition: all .3s cubic-bezier(.615,.19,.305,.91);
+			}
+		}
+	}
+
+	@include phone {
+		height: $is__100;
+		width: $is__100;
+		display: flex;
+		flex-direction: column;
+	}
+
+	@include tabletPortraitUp {
+		height: $is__100;
+		width: $is__100;
+		display: flex;
+	}
+
+	@media (max-width: 768px) {
+		display: inline-flex;
+		flex-direction: column;
+	}
+
+	@include tabletLandscapeUp {
+		display: inline-flex;
+		flex-direction: row;
+	}
+
+	@include desktopUp {
+		display: inline-flex;
+		flex-direction: row;
+	}
+
 }
 
 .is__active {
-	color: $dark;
+	color: $primary;
+}
+
+.mobile__nav {
+	width: 60px;
+	height: 50px;
+	text-align: center;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	order: 2;
+	.line  {
+    width: 40px;
+    height: 3px;
+		z-index: 1;
+		margin-bottom: 5px;
+		display: block;
+    background-color: $primary;
+	}
 }

@@ -1,2 +1,19 @@
 @import 'config';
 @import 'mixins';
+@import 'variables';
+@import 'typography';
+@import 'utils';
+@import 'cta';
+@import 'button';
+
+html, 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $body;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

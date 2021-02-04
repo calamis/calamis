@@ -1,0 +1,144 @@
+.contact__form {
+	.page__header {
+		height: $is__100;
+
+		@include phone { 
+			height: $is_400;
+		}
+		
+		@include tabletPortraitUp {
+			height: $is_400;
+		}
+	
+		@include tabletLandscapeUp {
+			height: $is_400;
+		}
+	
+		@mixin desktopUp {
+			height: $is_400;
+		}
+	
+		@mixin bigDesktopup {
+			height: $is_400;
+		}
+	}
+}
+
+.main__form {
+	.form__label,
+	.form__input {
+		width: $is__100;
+		flex-direction: column;
+		display: flex;
+	}
+
+	.the__column {
+		display: flex;
+
+		.form__input {
+			width: $is__100;
+			margin-right: $is_20;
+			margin-bottom: $is_15;
+
+			@include phone { 
+				min-width: $is__100;
+			}
+			
+			@include tabletPortraitUp {
+				min-width: $is_250;
+			}
+		
+			@include tabletLandscapeUp {
+				min-width: $is_250;
+			}
+		
+			@mixin desktopUp {
+				min-width: $is_250;
+			}
+		}
+		@include phone { 
+			display: block;
+		}
+	}
+}
+
+.btn {
+	font-size: $is_18;
+	color: $secondary;
+	background-color: $primary;
+	outline: 0;
+	text-transform: uppercase;
+	font-weight: 500;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+
+	&:hover,
+	&:focus {
+		border: 0;
+		outline: 0;
+	}
+}
+
+input[type=text], 
+input[type=textarea], 
+input[type=email], 
+input[type=url], 
+input[type=password], 
+input[type=tel], 
+input[type=range], 
+input[type=date], 
+input[type=month], 
+input[type=week], 
+input[type=time], 
+input[type=datetime], 
+input[type=datetime-local], 
+input[type=color], 
+input[type=number], 
+input[type=search], 
+textarea,
+button,
+select {
+	color: $primary;
+	height: $is_55;
+	width: $is__100;
+	max-width: $is_600;
+  border: 1px solid #C4C4C4;
+  border-radius: 3px;
+  padding: 3px;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 0 10px;
+	background-color: #F5F5F5;
+	outline: 0;
+	margin: $is_10 0;
+	font-family: inherit;
+
+	&:hover,
+	&:focus {
+		border: 1px solid #C4C4C4;
+		border-radius: 3px;
+		outline: 0;
+	}
+}
+
+select.form__input {
+	height: $is__100;
+	color: #262626;
+	padding: $is_15;
+}
+
+select option {
+	color: $primary;
+}
+
+textarea {
+	height: $is_100;
+	padding: $is_10;
+}
+
+.error {
+	color: #b2102f;
+	font-size: $is_14;
+	margin: 0 0 $is_10 0;
+}

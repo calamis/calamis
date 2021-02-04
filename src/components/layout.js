@@ -1,32 +1,26 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './Navbar/Navbar.js';
+import Header from './Header';
+import Footer from './Footer';
 
-import Header from '../components/header'
-import Footer from '../components/footer'
+import '../sass/app.scss';
 
-import '../sass/app.scss'
-
-const Layout = (props) => {
+const Layout = ({ children, location }) => {
+	const isHome = location.pathname === '/';
 	return (
-		<div className="main__layout">
-			<div className="main__pattern">
-				<div className="grd"></div>
-				<div className="grd"></div>
-				<div className="grd"></div>
-				<div className="grd"></div>
-				<div className="grd"></div>
-				<div className="grd"></div>
+		<>
+			<div className="main__layout">
+				<div className="main__nav">
+					<Navbar />
+				</div>
+				{isHome ? <div className="main__header"><Header /></div> : null }
+				{children}
 			</div>
-			<div className="main__header">
-				<Header />
-			</div>
-			<div className="main__content">
-				{props.children}
-			</div>
-			<div className="main__footer">
+			<footer className="main__footer">
 				<Footer />
-			</div>
-		</div>
+			</footer>
+		</>
 	)
 }
 
-export default Layout
+export default Layout;

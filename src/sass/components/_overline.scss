@@ -1,0 +1,25 @@
+.the__overline {
+	color: $primary;
+	font-size: $caption;
+  font-weight: 900;
+  font-style: oblique;
+	display: block;
+  line-height: 1.5rem;
+  letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	
+	&:before {
+		content: "";
+    display: inline-block;
+    height: 2px;
+    background: $accent;
+    width: 3.125rem;
+    margin-right: .875rem;
+    vertical-align: middle;
+	}
+
+  @include phone {
+    font-size: $is_14;
+    font-weight: 700;
+  }
+}

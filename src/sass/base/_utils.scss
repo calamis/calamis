@@ -1,0 +1,52 @@
+.main__container {
+	height: $is__100;
+	max-width: $is_1400;
+	margin: $is_zero auto;
+	width: $is__100;
+	display: flex;
+
+	@include phone {
+		height: auto;
+	}
+}
+
+.main__wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-flow: 1;
+
+	@include phone {
+		display: inline-block;
+	}
+	
+  @include tabletPortraitUp {
+  	display: inline-block;	
+  }
+
+  @include tabletLandscapeUp {
+  	// display: inline-block;
+  }
+
+  @include desktopUp {
+  	display: flex;
+  }
+
+}
+
+.the__section {
+	@include phone {
+		margin: $is_50 0;
+	}
+	
+  @include tabletPortraitUp {
+  	margin: $is_50 0;
+  }
+
+  @include tabletLandscapeUp {
+  	margin: $is_100 0;
+  }
+
+  @include desktopUp {
+  	margin: $is_100 0;
+  }
+}

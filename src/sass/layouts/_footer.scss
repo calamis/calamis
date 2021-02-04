@@ -1,6 +1,187 @@
 .main__footer {
-	text-align: center;
-	.footer__copyright {
-		font-size: 14px;
+	height: auto;
+	width: $is__100;
+	background-color: $primary;
+	
+		.main__container {
+			display: flex;
+			width: 100%;	
+
+			@include phone {
+				padding: $is_50 $is_20;
+			}
+
+			@include tabletPortraitUp {
+				padding: $is_50 $is_20;
+			}
+
+			@media (max-width: 768px) {
+				padding: $is_50 $is_20;
+			}
+
+			@include tabletLandscapeUp {
+				padding: $is_50 $is_20;
+			}
+
+			@include desktopUp {
+				padding: $is_50 $is_20;
+			}
+			
+			@include bigDesktopup {
+				padding: $is_50 $is_zero;
+			}
+
+		.the__column {
+			flex-grow: 1;
+
+			.the__headline {
+				color: $white;
+				font-size: $is_40;
+				font-weight: 800;
+			}
+
+			.the__body2 {
+				color: $white;
+				font-size: $is_14;
+				max-width: $is_300;
+			}
+
+			.the__list {
+				list-style: none;
+				color: $white;
+				position: relative;
+				z-index: 10;
+			}
+
+			.xalamis__logo {
+				color: #5d5e5d;
+				height: $is_50;
+			}
+
+			&:nth-child(1) {
+				flex-basis: 80%;
+			}
+
+			&:nth-child(2) {
+				flex-basis: 15%;
+			}
+
+			&:nth-child(3) {
+				flex-basis: 10%;
+			}
+		}
+
+		@include phone {
+			display: inline-block;
+			.the__column {
+				padding: $is_20 0;
+
+				.the__title {
+					font-size: $is_30;
+					font-weight: 700;
+				}
+
+				.the__body2 {
+					color: $white !important;
+					padding: $is_10 0;
+				}
+
+				.footer__copyright {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	.footer__note {
+		color: #5d5e5d;
+		background-color: #2a2a2a;
+		padding: 0 $is_20;
+		.main__container { 
+			padding: 0 $is_20;
+
+			.the__column {
+				width: $is__100;
+				display: flex;
+				flex-grow: 1;
+				align-items: center;
+
+				.the__logo {
+					color: #5d5e5d;
+					@include phone {
+						font-size: $is_16;
+					}
+				}
+
+				.footer__copyright {
+					color: #5d5e5d;
+					margin: $is_zero;
+					margin-left: auto;
+
+					@include phone {
+						font-size: $is_12;
+					}
+				}
+			}
+
+			@include phone {
+				padding: 0;
+			}
+
+			@include tabletPortraitUp {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.the__list {
+	list-style: none;
+	text-align: left;
+	margin: $is_zero;
+
+	@include phone {
+		text-align: left;
+	}
+	
+	.the__link {
+		width: auto;
+		list-style: none;
+		color: $white;
+		font-size: $is_14;
+		font-weight: 700;
+		padding: $is_15 0;
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover .reveal__item:before {
+			width: $is__100;
+			left: 0;
+		}
+
+		.reveal__item	{
+			position: relative;
+			z-index: 1;
+			
+			&:before {
+				content: "";
+				position: absolute;
+				top: 12px;
+				width: 0;
+				right: 0;
+				bottom: 0;
+				left: auto;
+				height: 2px;
+				background: $white;
+				z-index: -1;
+				-webkit-transition: all 0.3s cubic-bezier(0.615, 0.19, 0.305, 0.91);
+				transition: all 0.3s cubic-bezier(0.615, 0.19, 0.305, 0.91);
+			}
+		}
+
+		@include phone {
+			padding: $is_5 0;
+		}
 	}
 }

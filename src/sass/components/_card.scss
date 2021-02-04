@@ -1,0 +1,111 @@
+.card {
+	width: $is__100;
+	flex: 0 50%;
+
+	.the__link {
+		color: $primary;
+		display: block;
+		text-decoration: none;
+	}
+
+	.card__header {
+		.card__img {
+			width: $is_700;
+			height: auto;
+			max-width: $is__100;
+			margin: $is_zero;
+			
+			@include phone {
+				width: auto;
+			}
+			@include tabletPortraitUp {
+				width: auto;
+			}
+		}
+	}
+
+	.card__body {
+		.the__headline {
+			color: $primary;
+			font-size: $body1;
+			font-weight: 800;
+			font-family: $body;
+			padding: $is_20 0 $is_10 0;
+		}
+
+		.the__tag {
+			color: $accent;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: .1rem;
+		}
+	}
+
+	@include phone {
+		padding: $is_20 0;
+
+		.the__title {
+			font-size: $is_20;
+		}
+
+		.the__tag {
+			font-size: $is_12;
+		}
+	}
+
+	@include tabletPortraitUp {
+		padding: $is_20 0;
+		
+		.the__title {
+			font-size: $is_28;
+		}
+
+		.the__tag {
+			font-size: $is_14;
+		}
+	}
+
+	@include tabletLandscapeUp {
+		padding: $is_20;
+			
+		.the__title {
+			font-size: $is_28;
+		}
+
+		.the__tag {
+			font-size: $is_14;
+		}
+	}	
+
+	@mixin desktopUp {
+  	padding: $is_20;
+  	
+  	.the__title {
+			font-size: $is_30;
+		}
+
+  	.the__tag {
+			font-size: $is_14;
+		}
+	}
+
+	@mixin bigDesktopup {
+	 	padding: $is_20; 
+
+	 	.the__title {
+			font-size: $is_34;
+		}
+
+	 	.the__tag {
+			font-size: $is_16;
+		}
+	}
+
+	&:nth-child(even) {
+		margin-top: $is_100;
+
+		@include phone {
+			margin-top: 0;
+		}
+	}
+}

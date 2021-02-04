@@ -1,36 +1,65 @@
 .main__hero {
+	height: $is__100;
+	width: $is__100;
 	display: flex;
-	text-align: center;
-	min-height: 50vh;
   flex-direction: column;
-  justify-content: center;
+	justify-content: center;
+	min-height: 80vh;
+	
+	@include phone {
+		min-height: 50vh;
+	}
+
 	.brand__logo {
 		margin: 20px 0;
-		font-size: 90px;
-		line-height: 4rem;
 	}
 
-	.the__title {
-		color: #000;
-		margin: 0;
-		font-size: 40px;
-		padding: 10px 0;
-		text-transform: lowercase;
-	}
-
-	.the__subTitle {
-		color: #000;
-		font-weight: 600;
-		letter-spacing: 3.28px;
+	.the__headline {
+		height: $is__100;
+		width: $is__100;
+		max-width: $is_1000;
+		font-weight: 900;
+		line-height: 5.55rem;
 		text-transform: uppercase;
+		padding: $is_20 0;
+
+		@include phone {
+			font-size: $is_35;
+			line-height: normal;
+		}
+
+		@include tabletPortraitUp {
+			font-size: $is_65;
+			line-height: normal;
+		}
+
+		@include tabletLandscapeUp {
+			font-size: $is_80;
+			line-height: normal;
+		}
+
+		@include desktopUp {
+			font-size: $is_95;
+			line-height: 5.55rem;
+		}
+
+		@include bigDesktopup {
+			font-size: $is_95;
+			line-height: 5.55rem;
+		}
 	}
 
+	.the__body2 {
+		font-size: $is_20;
+		padding-top: $is_20;
+	}
 
-	.the__desc {
-		color: #000;
-		font-weight: 500;
-		font-size: 16px;
-		letter-spacing: 3.28px;
-		text-transform: uppercase;
+	.the__body1 {
+		padding: $is_zero !important;
+		
+		@include phone {
+			font-size: $is_16;
+			line-height: normal;
+		}
 	}
 }

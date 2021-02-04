@@ -1,0 +1,29 @@
+
+.main__wrapper {
+	display: flex;
+
+	.the__column {
+		flex-grow: 1;
+	}
+
+	.the__body1 {
+		color: $primary;
+		
+		@include phone {
+			line-height: 2rem;
+			padding: $is_15 0;
+		}
+
+		@include tabletPortraitUp {
+			padding: $is_25 0;
+		}
+
+		@include tabletLandscapeUp {
+			padding: $is_25 0;
+		}				
+	}
+
+	@include phone {
+		display: block;
+	}
+}

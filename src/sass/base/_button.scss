@@ -1,0 +1,70 @@
+.the__btnIcon {
+  color: $white;
+  width: $is__100;
+  max-width: $is_200;
+  display: inline-block;
+  font-weight: 600;
+  font-size: $is_15;
+  border-radius: 5px;
+  background-color: #262626;
+  letter-spacing: 0;
+  text-decoration: none;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+
+  &:hover .reveal__item:before {
+    width: $is__100;
+    left: 0;
+  }
+  
+  &:hover {
+    color: $primary;
+    
+    .arrow {
+      fill: $primary !important;
+      -webkit-transition: all .18s cubic-bezier(.615,.19,.305,.91);
+      transition: all .18s cubic-bezier(.615,.19,.305,.91);
+      right: $is_10 !important;
+    }
+  }
+
+  .reveal__item	{
+    position: relative;
+    z-index: 1;
+    padding: $is_10 $is_30;
+    border: solid 1px $primary;
+    border-radius: 5px;
+    font-weight: 800;
+    
+    .arrow {
+      max-width: 1.5rem;
+      height: $is__100;
+      fill: $white;
+      -webkit-transition: all .18s cubic-bezier(.615,.19,.305,.91);
+      transition: all .18s cubic-bezier(.615,.19,.305,.91);
+      right: $is_30;
+      width: $is__100;
+      position: absolute;
+      top: 0;
+    }
+
+    &:before {
+      color: $primary;
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 0;
+      right: 0;
+      bottom: 0;
+      left: auto;
+      height: auto;
+      background: $white;
+      border: solid 1px $primary;
+      border-radius: 5px;
+      z-index: -1;
+      -webkit-transition: all .3s cubic-bezier(.615,.19,.305,.91);
+      transition: all .3s cubic-bezier(.615,.19,.305,.91);
+    }
+  }
+}

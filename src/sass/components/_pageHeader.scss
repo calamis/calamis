@@ -1,0 +1,65 @@
+.page__header {
+  width: $is__100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .the__body1 {
+    width: $is__100;
+    max-width: $is_800;
+  }
+
+  .the__headline {
+    width: $is__100;
+    max-width: $is_1000;
+    font-weight: 900;
+    line-height: 5.55rem;
+    text-transform: uppercase;
+    padding: $is_10 0;
+
+    @include phone {
+			font-size: $is_40;
+			line-height: normal;
+		}
+
+		@include tabletPortraitUp {
+			font-size: $is_50;
+			line-height: normal;
+		}
+
+		@include tabletLandscapeUp {
+			font-size: $is_65;
+			line-height: normal;
+		}
+
+		@include desktopUp {
+			font-size: $is_80;
+			line-height: 5.55rem;
+		}
+
+		@include bigDesktopup {
+			font-size: $is_80;
+			line-height: 5.55rem;
+		}
+  }
+
+  @include phone {
+    height: $is_600;
+  }
+  
+  @include tabletPortraitUp {
+    height: $is_600;
+  }
+
+  @include tabletLandscapeUp {
+    height: $is_500;
+  }
+
+  @include desktopUp {
+    height: $is_500;
+  }
+  
+  @include bigDesktopup {
+    height: $is_500;
+  }
+}
