@@ -1,7 +1,7 @@
 ## Hello World 👋
 ![](https://komarev.com/ghpvc/?username=raintomista&style=flat-square)
 
-I'm Christian, a Frontend Engineer with an Eye for Design 🎨 based in 🇵🇭 &nbsp;Manila, Philippines.
+I'm Christian, a Frontend Engineer with an Eye for Design 🎨 based in 🇵🇭 &nbsp;Makati, Philippines.
 - 🌏 &nbsp; Working (GMT+8) since 2013
 - 💻 &nbsp; Loves creating web apps with **ReactJS (NextJS), TypeScript, MaterialUI, SASS.**
 - 📫 &nbsp; Reach me on 🌏(https://www.linkedin.com/in/calamis/).
