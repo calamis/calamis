@@ -3,7 +3,7 @@
 
 I'm Christian, a Frontend Engineer with an Eye for Design 🎨 based in 🇵🇭 &nbsp;Makati, Philippines.
 - 🌏 &nbsp; Working (GMT+8) since 2013
-- 💻 &nbsp; Loves creating web apps with **ReactJS (NextJS), TypeScript, MaterialUI, SASS.**
+- 💻 &nbsp; Loves creating user-centric websites and scalable web apps with **Tech Stack .**
 - 📫 &nbsp; Reach me on 🌏(https://www.linkedin.com/in/calamis/).
 
 ### Tech Stack :
