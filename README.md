@@ -15,7 +15,8 @@ I'm Christian, a Frontend Engineer with an Eye for Design 🎨 based in 🇵🇭
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
-![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript)
-![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat-square&logo=mysql)
+![SASS](https://img.shields.io/badge/-SASS-1572B6?style=flat-square&logo=sass)
+<a href="#"><img alt="Material Design" src="https://img.shields.io/badge/Material%20Design%20-%230081CB.svg?logo=material-design&logoColor=white"></a>
+![MySQL](https://img.shields.io/badge/-MySQL-eaeaea?style=flat-square&logo=mysql)
 
 [![Christian GitHub stats](https://github-readme-stats.vercel.app/api?username=calamis&count_private=true&show_icons=true&hide_title=true)](https://github.com/anuraghazra/github-readme-stats)
