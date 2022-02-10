@@ -24,10 +24,12 @@ I'm Christian, a Frontend Engineer with an Eye for Design 🎨 based in 🇵🇭
 
 ### Tools:
 ![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
-<a href="#"><img alt="GitHub Pages" src="https://img.shields.io/badge/GitHub%20Pages-%23327FC7.svg?logo=github&logoColor=white"></a>
+![Github](https://img.shields.io/badge/-Github-black?style=flat-square&logo=github)
 <a href="#"><img alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white"></a>
 <a href="#"><img alt="Vercel" src="https://img.shields.io/badge/Vercel%20-%23000000.svg?logo=vercel&logoColor=white"></a>
+<a href="#"><img alt="Vercel" src="https://img.shields.io/badge/-jira-blue?style=flat-square&logo=jira"></a>
 ![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker)
+
 <a href="#"><img alt="Heroku" src="https://img.shields.io/badge/Heroku%20-%23430098.svg?logo=heroku&logoColor=white"></a>
 
 
