@@ -3,7 +3,7 @@
 
 I'm Christian, a Software Engineer with an Eye for Design 🎨 based in 🇵🇭 &nbsp;Makati, Philippines.
 
-- 🚀 &nbsp; I’m currently working and honing my skill on MERN Stack and building projects in this technologies
+- 🚀 &nbsp; I’m currently working and honing my skill on MERN Stack and building projects in these technologies
 - 💻 &nbsp; Loves creating user-centric websites and scalable web apps with **Tech Stack .**
 - ✅ &nbsp; Reach me on 🌏(https://www.linkedin.com/in/calamis/).
 - ✅&nbsp; Follow me on 🌝(https://twitter.com/cnalamis).
